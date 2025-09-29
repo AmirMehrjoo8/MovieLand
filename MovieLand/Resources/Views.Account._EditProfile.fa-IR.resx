@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="EditProfileTitle" xml:space="preserve">
+  <value>تغییر اطلاعات حساب</value>
+</data>
+	<data name="UsernameLabel" xml:space="preserve">
+  <value>نام کاربری</value>
+</data>
+	<data name="UsernamePlaceholder" xml:space="preserve">
+  <value>نام کاربری جدید خود را وارد کنید</value>
+</data>
+	<data name="NameLabel" xml:space="preserve">
+  <value>نام</value>
+</data>
+	<data name="NamePlaceholder" xml:space="preserve">
+  <value>نام جدید خود را وارد کنید</value>
+</data>
+	<data name="EmailLabel" xml:space="preserve">
+  <value>ایمیل</value>
+</data>
+	<data name="EmailPlaceholder" xml:space="preserve">
+  <value>ایمیل جدید خود را وارد کنید</value>
+</data>
+	<data name="PasswordLabel" xml:space="preserve">
+  <value>رمز عبور</value>
+</data>
+	<data name="PasswordPlaceholder" xml:space="preserve">
+  <value>رمز عبور جدید خود را وارد کنید</value>
+</data>
+	<data name="RePasswordLabel" xml:space="preserve">
+  <value>تکرار رمز عبور</value>
+</data>
+	<data name="RePasswordPlaceholder" xml:space="preserve">
+  <value>رمز عبور جدید خود را تکرار کنید</value>
+</data>
+	<data name="SubmitEditProfile" xml:space="preserve">
+  <value>ثبت</value>
+</data>
+</root>

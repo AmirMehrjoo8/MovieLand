@@ -1,0 +1,68 @@
+﻿@using System.Globalization
+@model IEnumerable<MovieLand.Models.User>
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = Localizer["UsersTitle"];
+
+    var lan = CultureInfo.CurrentUICulture.Name == "fa-IR" ? "en-US" : "fa-IR";
+}
+@section Language {
+    <a class="language text-nowrap" href="/Home/SetLanguage?culture=@lan&returnUrl=/Admin/Users">@lan</a>
+}
+
+<div class="container-field">
+    <div class="users-details">
+        <span>@Localizer["AdminCount"]: @Model.Where(u => u.Type == 1).Count()</span>
+        <span>@Localizer["RegularUsers"]: @Model.Where(u => u.Type == 0).Count()</span>
+        <span>@Localizer["VipUsers"]: @Model.Where(u => u.Type == 2).Count()</span>
+    </div>
+
+    <div class="search-box-users">
+        <form asp-action="Search" asp-controller="Users" asp-area="Admin">
+            <input dir="@Localizer["dir"]" type="search" name="q" class="input-group" placeholder="@Localizer["SearchPlaceholder"]" />
+        </form>
+
+        @if (TempData["resCount"] != null)
+        {
+            <div>
+                @Localizer["FoundUsersCount", TempData["resCount"], TempData["q"]]
+            </div>
+        }
+    </div>
+
+    <div class="users-container">
+        @foreach (var item in Model)
+        {
+            <partial name="_user" model="item" />
+        }
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.querySelectorAll("input[type='file'][id^='profilePicInput-']").forEach(function (input) {
+            const userId = input.id.split('-')[1];
+            const preview = document.getElementById('profilePicPreview-' + userId);
+
+            input.addEventListener('change', function () {
+                const file = this.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function (e) {
+                        preview.setAttribute('src', e.target.result);
+                    };
+                    reader.readAsDataURL(file);
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(function () {
+            if ('@TempData["EditProfileError"]' !== '') {
+                $("#ProfileEditModal-@TempData["UserId"]").modal("show");
+            }
+        });
+    </script>
+}

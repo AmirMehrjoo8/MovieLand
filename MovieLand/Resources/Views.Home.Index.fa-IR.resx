@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="Language" xml:space="preserve">
+    <value>en-US</value>
+  </data>
+  <data name="CurrentLanguage" xml:space="preserve">
+    <value>fa-IR</value>
+  </data>
+  <data name="ChangeLanguageButton" xml:space="preserve">
+    <value>English</value>
+  </data>
+	<data name="TheBestMovies" xml:space="preserve">
+        <value>بهترین فیلم ها</value>
+    </data>
+	<data name="TheBestSeries" xml:space="preserve">
+        <value>بهترین سریال ها</value>
+    </data>
+	<data name="AdventureMovies" xml:space="preserve">
+        <value>فیلم‌های ماجراجویی</value>
+    </data>
+	<data name="ActionMovies" xml:space="preserve">
+        <value>فیلم های اکشن</value>
+    </data>
+	<data name="HorrorMovies" xml:space="preserve">
+        <value>فیلم های ترسناک</value>
+    </data>
+	<data name="Home" xml:space="preserve">
+        <value>خانه</value>
+    </data>
+	<data name="ErrorFetchingData" xml:space="preserve">
+        <value>خطا در دریافت اطلاعات</value>
+    </data>
+	<data name="NoBackdropFound" xml:space="preserve">
+        <value>هیچ پس‌زمینه‌ای یافت نشد.</value>
+    </data>
+</root>

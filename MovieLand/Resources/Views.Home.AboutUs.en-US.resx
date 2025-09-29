@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="Language" xml:space="preserve">
+    <value>fa-IR</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>About Us</value>
+  </data>
+  <data name="Paragraph1" xml:space="preserve">
+    <value>Our website is created to gather and present the best and latest movies and TV series from around the world. With a simple and attractive user interface, you can easily choose your favorite genre, search for your desired movie or series, and view its full information.</value>
+  </data>
+  <data name="Paragraph2" xml:space="preserve">
+    <value>With a love for cinema, we strive to provide accurate, up-to-date, and user-friendly content to deliver a unique experience of exploring and discovering cinematic works.</value>
+  </data>
+</root>

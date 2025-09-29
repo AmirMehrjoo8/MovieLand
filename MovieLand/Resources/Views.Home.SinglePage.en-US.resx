@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="dir" xml:space="preserve">
+    <value>ltr</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>fa-IR</value>
+  </data>
+  <data name="CurrentLanguage" xml:space="preserve">
+    <value>en-US</value>
+  </data>
+	<data name="ChangeLanguageButton" xml:space="preserve">
+    <value>فارسی</value>
+  </data>
+	<data name="SectionBorder" xml:space="preserve">
+    <value>right</value>
+  </data>
+	<data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+	<data name="Genre" xml:space="preserve">
+    <value>Genre</value>
+  </data>
+	<data name="Rating" xml:space="preserve">
+    <value>Rating</value>
+  </data>
+	<data name="CountryOfOrigin" xml:space="preserve">
+    <value>Country of origin</value>
+  </data>
+	<data name="NumberOfSeasons" xml:space="preserve">
+  <value>Number of seasons</value>
+</data>
+	<data name="NumberOfEpisodes" xml:space="preserve">
+  <value>Number of episodes</value>
+</data>
+	<data name="PlotSummary" xml:space="preserve">
+  <value>Plot summary</value>
+</data>
+	<data name="NoDescription" xml:space="preserve">
+  <value>No description</value>
+</data>
+	<data name="Download" xml:space="preserve">
+  <value>Download</value>
+</data>
+	<data name="Season" xml:space="preserve">
+  <value>Season</value>
+</data>
+	<data name="Episode" xml:space="preserve">
+  <value>Episode</value>
+</data>
+	<data name="RelatedItems" xml:space="preserve">
+  <value>Related items</value>
+</data>
+	<data name="DownloadQuality480" xml:space="preserve">
+  <value>Download in 480p quality</value>
+</data>
+	<data name="DownloadQuality720" xml:space="preserve">
+  <value>Download in 720p quality</value>
+</data>
+	<data name="DownloadQuality1080" xml:space="preserve">
+  <value>Download in 1080p quality</value>
+</data>
+	<data name="CommentLoginError" xml:space="preserve">
+  <value>You must be logged in to post a comment.</value>
+</data>
+	<data name="CommentBorder" xml:space="preserve">
+  <value>left</value>
+</data>
+	<data name="FetchEpisodesError" xml:space="preserve">
+  <value>Error fetching episodes:</value>
+</data>
+	<data name="FetchDataError" xml:space="preserve">
+  <value>Error fetching data.</value>
+</data>
+
+</root>

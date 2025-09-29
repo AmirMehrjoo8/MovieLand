@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="AdminPanelTitle">
+		<value>Admin Panel</value>
+	</data>
+	<data name="Hello">
+		<value>Hello</value>
+	</data>
+	<data name="Dear">
+		<value>dear</value>
+	</data>
+	<data name="WelcomeToAdminPanel">
+		<value>Welcome to the admin panel</value>
+	</data>
+
+	<data name="dir">
+		<value>ltr</value>
+	</data>
+</root>

@@ -1,0 +1,58 @@
+﻿@using MovieLand.Classes
+@using System.Globalization
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@model IEnumerable<MovieLand.Models.Transaction>
+
+@{
+    ViewData["Title"] = Localizer["Title"].Value;
+    var lan = CultureInfo.CurrentUICulture.Name == "fa-IR" ? "en-US" : "fa-IR";
+}
+
+@section Language {
+    <a class="language text-nowrap" href="/Home/SetLanguage?culture=@lan&returnUrl=/Admin/Transactions">@lan</a>
+}
+
+<div class="transacaition-container" dir="@Localizer["dir"]">
+    <h2>@Localizer["Print"]</h2>
+    <div class="print">
+        <a asp-action="PrintPage" asp-controller="Transactions" asp-area="Admin" asp-route-status="true" class="btn btn-light">@Localizer["SuccessfulTransactions"]</a>
+        <a asp-action="PrintPage" asp-controller="Transactions" asp-area="Admin" asp-route-status="false" class="btn btn-light">@Localizer["UnsuccessfulTransactions"]</a>
+        <a asp-action="PrintPage" asp-controller="Transactions" asp-area="Admin" asp-route-status="All" class="btn btn-light">@Localizer["AllTransactions"]</a>
+    </div>
+
+    <h1>@Localizer["Transactions"]</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">@Localizer["Username"]</th>
+                <th scope="col">@Localizer["Card"]</th>
+                <th scope="col">@Localizer["Amount"]</th>
+                <th scope="col">@Localizer["TransactionDate"]</th>
+                <th scope="col">@Localizer["Status"]</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var i in Model)
+            {
+                <tr>
+                    <th scope="row">@i.User.Username</th>
+                    <td>
+                        @(i.SubCardId == 4 ? Localizer["Gold"] : "")
+                        @(i.SubCardId == 3 ? Localizer["Silver"] : "")
+                        @(i.SubCardId == 2 ? Localizer["Bronze"] : "")
+                    </td>
+                    <td>
+                        @{
+                            var amount = (i.Amount / 10).ToString("#,0");
+                        }
+                        @amount
+                    </td>
+                    <td>@ConvertDate.SimpleDateTimeByLanguage(i.TrxDateTime)</td>
+                    <td>@(i.IsSuccess ? Localizer["Success"] : Localizer["Failed"])</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

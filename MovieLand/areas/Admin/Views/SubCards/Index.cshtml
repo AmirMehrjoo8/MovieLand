@@ -1,0 +1,90 @@
+﻿@model IEnumerable<MovieLand.Models.SubCard>
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer;
+@using System.Globalization;
+@{
+    ViewData["Title"] = Localizer["Title"].Value;
+    var lan = CultureInfo.CurrentUICulture.Name == "fa-IR" ? "en-US" : "fa-IR";
+}
+
+@section Language {
+    <a class="language text-nowrap" href="/Home/SetLanguage?culture=@lan&returnUrl=/Admin/SubCards">@lan</a>
+}
+<div class="cards-container" dir="@Localizer["dir"]">
+    <div class="subCard gold">
+        <div class="top">
+            <h4 class="sub-title">@Localizer["GoldPlanTitle"]</h4>
+            <ul>
+                @foreach (var item in Localizer["GoldPlanFeatures"].Value.Split(','))
+                {
+                    <li>@item.Trim()</li>
+                }
+            </ul>
+        </div>
+        <div class="bottom">
+            <span class="sub-credit">@Model.Single(s => s.SubCardId == 4).Credit @Localizer["Duration"]</span>
+            <span class="sub-price">@Model.Single(s => s.SubCardId == 4).Price.ToString("#,0") @Localizer["Price"]</span>
+            <a href="#" class="edit-sub" data-bs-toggle="modal" data-bs-target="#edit-sub-4">@Localizer["Edit"]</a>
+        </div>
+    </div>
+
+    <div class="subCard silver">
+        <div class="top">
+            <h4 class="sub-title">@Localizer["SilverPlanTitle"]</h4>
+            <ul>
+                @foreach (var item in Localizer["SilverPlanFeatures"].Value.Split(','))
+                {
+                    <li>@item.Trim()</li>
+                }
+            </ul>
+        </div>
+        <div class="bottom">
+            <span class="sub-credit">@Model.Single(s => s.SubCardId == 3).Credit @Localizer["Duration"]</span>
+            <span class="sub-price">@Model.Single(s => s.SubCardId == 3).Price.ToString("#,0") @Localizer["Price"]</span>
+            <a href="#" class="edit-sub" data-bs-toggle="modal" data-bs-target="#edit-sub-3">@Localizer["Edit"]</a>
+        </div>
+    </div>
+
+    <div class="subCard bronze">
+        <div class="top">
+            <h4 class="sub-title">@Localizer["BronzePlanTitle"]</h4>
+            <ul>
+                @foreach (var item in Localizer["BronzePlanFeatures"].Value.Split(','))
+                {
+                    <li>@item.Trim()</li>
+                }
+            </ul>
+        </div>
+        <div class="bottom">
+            <span class="sub-credit">@Model.Single(s => s.SubCardId == 2).Credit @Localizer["Duration"]</span>
+            <span class="sub-price">@Model.Single(s => s.SubCardId == 2).Price.ToString("#,0") @Localizer["Price"]</span>
+            <a href="#" class="edit-sub" data-bs-toggle="modal" data-bs-target="#edit-sub-2">@Localizer["Edit"]</a>
+        </div>
+    </div>
+</div>
+@for (int i = 2; i <= 4; i++)
+{
+    <div class="modal fade" id="edit-sub-@i" tabindex="-1" aria-hidden="true" dir="@Localizer["dir"]">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">@Localizer["EditInfo"]</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form asp-action="EditSubCard" asp-controller="SubCards" asp-area="Admin">
+                        <input type="hidden" name="subCardId" value="@i"/>
+                        <div class="mb-3">
+                            <label class="form-label">@Localizer["Credit"]</label>
+                            <input type="text" name="credit" class="form-control" placeholder="@Localizer["Credit"]" value="@Model.Single(s => s.SubCardId == i).Credit">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">@Localizer["EditPrice"]</label>
+                            <input type="text" name="price" class="form-control" placeholder="@Localizer["EditPrice"]" value="@Convert.ToInt64(Model.Single(s => s.SubCardId == i).Price)">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">@Localizer["Edit"]</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+}

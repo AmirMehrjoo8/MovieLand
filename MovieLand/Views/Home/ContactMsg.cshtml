@@ -1,0 +1,15 @@
+﻿@model List<string>
+<div style="margin-top:90px; height:50vh;" class="container">
+    <div class="@Model[1] alert alert-light text-center col-sm-12 col-md-10 col-lg-9 col-xl-8 col-xxl-7 m-auto">
+        @if (Model != null)
+        {
+            <p class="@Model[1] p-3 text-center">
+                @Model[0]
+            </p>
+        }
+    </div>
+</div>
+@section Scripts {
+    <script src="~/js/jquery-3.7.1.min.js"></script>
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+}

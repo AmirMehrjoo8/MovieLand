@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root><data name="Messages" xml:space="preserve">
+    <value>Messages</value>
+  </data>
+  <data name="dir" xml:space="preserve">
+    <value>ltr</value>
+  </data>
+  <data name="UserMessages" xml:space="preserve">
+    <value>User Messages:</value>
+  </data>
+  <data name="NoMessages" xml:space="preserve">
+    <value>No messages to display.</value>
+  </data>
+  </root>

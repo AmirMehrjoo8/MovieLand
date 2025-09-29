@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <data name="Language" xml:space="preserve">
+    <value>en-US</value>
+  </data>
+    <data name="CurrentLanguage" xml:space="preserve">
+    <value>fa-IR</value>
+  </data>
+    <data name="ChangeLanguageButton" xml:space="preserve">
+    <value>English</value>
+  </data>
+    <data name="Username" xml:space="preserve">
+    <value>نام کاربری</value>
+</data>
+    <data name="Phone" xml:space="preserve">
+    <value>تلفن</value>
+</data>
+    <data name="AccountType" xml:space="preserve">
+    <value>نوع حساب</value>
+</data>
+    <data name="EditProfile" xml:space="preserve">
+    <value>تغییر اطلاعات</value>
+</data>
+    <data name="SubInfo" xml:space="preserve">
+    <value>اطلاعات اشتراک</value>
+</data>
+    <data name="GoldSubscription" xml:space="preserve">
+    <value>اشتراک طلایی</value>
+</data>
+    <data name="SilverSubscription" xml:space="preserve">
+    <value>اشتراک نقره‌ای</value>
+</data>
+    <data name="BronzeSubscription" xml:space="preserve">
+    <value>اشتراک برنز</value>
+</data>
+    <data name="RemoveAds" xml:space="preserve">
+    <value>حذف تبلیغات</value>
+</data>
+    <data name="UnlimitedDownloads" xml:space="preserve">
+    <value>دانلود نامحدود</value>
+</data>
+    <data name="LimitedDownloads" xml:space="preserve">
+    <value>دانلود محدود</value>
+</data>
+    <data name="PrioritySupport" xml:space="preserve">
+    <value>پشتیبانی ویژه</value>
+</data>
+    <data name="StandardSupport" xml:space="preserve">
+    <value>پشتیبانی معمولی</value>
+</data>
+    <data name="NoSupport" xml:space="preserve">
+    <value>بدون پشتیبانی</value>
+</data>
+    <data name="12Months" xml:space="preserve">
+    <value>1 ساله</value>
+</data>
+    <data name="6Months" xml:space="preserve">
+    <value>6 ماهه</value>
+</data>
+    <data name="3Months" xml:space="preserve">
+    <value>3 ماهه</value>
+</data>
+    <data name="TimeRemaining" xml:space="preserve">
+    <value>زمان باقی‌مانده</value>
+</data>
+    <data name="NoSubTitle" xml:space="preserve">
+    <value>شما اشتراک فعال ندارید</value>
+</data>
+    <data name="NoSubErrMsg" xml:space="preserve">
+    <value>برای استفاده از امکانات ویژه مانند دانلود نامحدود، حذف تبلیغات و پشتیبانی بهتر، یکی از پلن‌های اشتراک را تهیه کنید.</value>
+</data>
+    <data name="BuySub" xml:space="preserve">
+    <value>خرید اشتراک</value>
+</data>
+    <data name="Profile" xml:space="preserve">
+    <value>پروفایل</value>
+</data>
+	<data name="AdminPanel" xml:space="preserve">
+  <value>پنل ادمین</value>
+</data>
+	
+</root>

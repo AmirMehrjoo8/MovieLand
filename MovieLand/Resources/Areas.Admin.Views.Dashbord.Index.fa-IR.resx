@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="AdminPanelTitle">
+		<value>پنل مدیریت</value>
+	</data>
+	<data name="Hello">
+		<value>سلام</value>
+	</data>
+	<data name="Dear">
+		<value>عزیز</value>
+	</data>
+	<data name="WelcomeToAdminPanel">
+		<value>به پنل ادمین خوش آمدید</value>
+	</data>
+
+	<data name="dir">
+		<value>rtl</value>
+	</data>
+</root>

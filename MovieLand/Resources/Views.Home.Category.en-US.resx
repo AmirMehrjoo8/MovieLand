@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="Category" xml:space="preserve">
+  <value>Category</value>
+</data>
+	<data name="Category_Adventure" xml:space="preserve">
+        <value>Adventure</value>
+    </data>
+	<data name="Category_Comedy" xml:space="preserve">
+        <value>Comedy</value>
+    </data>
+	<data name="Category_Action" xml:space="preserve">
+        <value>Action</value>
+    </data>
+	<data name="Category_Animation" xml:space="preserve">
+        <value>Animation</value>
+    </data>
+	<data name="Category_Crime" xml:space="preserve">
+        <value>Crime</value>
+    </data>
+	<data name="Category_Mystery" xml:space="preserve">
+        <value>Mystery</value>
+    </data>
+	<data name="Category_Drama" xml:space="preserve">
+        <value>Drama</value>
+    </data>
+	<data name="Category_Family" xml:space="preserve">
+        <value>Family</value>
+    </data>
+	<data name="Category_Documentary" xml:space="preserve">
+        <value>Documentary</value>
+    </data>
+	<data name="Category_Western" xml:space="preserve">
+        <value>Western</value>
+    </data>
+	<data name="Movie" xml:space="preserve">
+  <value>Movie</value>
+</data>
+	<data name="TV" xml:space="preserve">
+  <value>TV Series</value>
+</data>
+	<data name="Loading" xml:space="preserve">
+  <value>Loading...</value>
+</data>
+
+	<data name="GenreNotFound" xml:space="preserve">
+  <value>Genre not found</value>
+</data>
+
+	<data name="NoContentFound" xml:space="preserve">
+  <value>No content found for this genre.</value>
+</data>
+
+	<data name="FetchError" xml:space="preserve">
+  <value>Error fetching data</value>
+</data>
+
+	<data name="Movie" xml:space="preserve">
+  <value>Movie</value>
+</data>
+
+	<data name="TVShow" xml:space="preserve">
+  <value>TV Show</value>
+</data>
+
+	<data name="Fetching" xml:space="preserve">
+  <value>Fetching</value>
+</data>
+
+	<data name="Error" xml:space="preserve">
+  <value>Error</value>
+</data>
+
+</root>

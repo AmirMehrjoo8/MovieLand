@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="Language" xml:space="preserve">
+    <value>en-US</value>
+  </data>
+  <data name="CurrentLanguage" xml:space="preserve">
+    <value>fa-IR</value>
+  </data>
+  <data name="ChangeLanguageButton" xml:space="preserve">
+    <value>English</value>
+  </data>
+	<data name="Download" xml:space="preserve">
+        <value>دانلود</value>
+    </data>
+	<data name="Dear1" xml:space="preserve">
+        <value></value>
+    </data>
+	<data name="Dear2" xml:space="preserve">
+        <value>عزیز</value>
+    </data>
+	<data name="TvMessage" xml:space="preserve">
+        <value>دانلود قسمت {0} از فصل {1} سریال "{2}" با کیفیت {3} با موفقیت انجام شد.</value>
+    </data>
+	<data name="MovieMessage" xml:space="preserve">
+        <value>دانلود فیلم "{0}" با کیفیت {1} با موفقیت انجام شد.</value>
+    </data>
+</root>

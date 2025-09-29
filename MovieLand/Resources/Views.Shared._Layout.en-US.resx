@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <data name="WebName" xml:space="preserve">
+        <value>MovieLand</value>
+    </data>
+    <data name="dir" xml:space="preserve">
+        <value>ltr</value>
+    </data>
+	<data name="Home" xml:space="preserve">
+        <value>Home</value>
+    </data>
+	<data name="Category" xml:space="preserve">
+        <value>Category</value>
+    </data>
+	<data name="AboutUs" xml:space="preserve">
+        <value>About Us</value>
+    </data>
+	<data name="Profile" xml:space="preserve">
+        <value>Profile</value>
+    </data>
+	<data name="Search" xml:space="preserve">
+        <value>Search...</value>
+    </data>
+	<data name="BuySub" xml:space="preserve">
+        <value>Buy a subscription</value>
+    </data>
+	<data name="Login" xml:space="preserve">
+        <value>Login</value>
+    </data>
+	<data name="RulesAndRegulations" xml:space="preserve">
+        <value>Rules and regulations</value>
+    </data>
+	<data name="Advertisements" xml:space="preserve">
+        <value>Advertisements</value>
+    </data>
+	<data name="UserPrivacy" xml:space="preserve">
+        <value>User privacy</value>
+    </data>
+	<data name="Socialmedia" xml:space="preserve">
+        <value>Social Media</value>
+    </data>
+	<data name="AllRightsReserved" xml:space="preserve">
+        <value>All rights reserved.</value>
+    </data>
+	<data name="Category_Adventure" xml:space="preserve">
+        <value>Adventure</value>
+    </data>
+    <data name="Category_Comedy" xml:space="preserve">
+        <value>Comedy</value>
+    </data>
+    <data name="Category_Action" xml:space="preserve">
+        <value>Action</value>
+    </data>
+    <data name="Category_Animation" xml:space="preserve">
+        <value>Animation</value>
+    </data>
+    <data name="Category_Crime" xml:space="preserve">
+        <value>Crime</value>
+    </data>
+    <data name="Category_Mystery" xml:space="preserve">
+        <value>Mystery</value>
+    </data>
+    <data name="Category_Drama" xml:space="preserve">
+        <value>Drama</value>
+    </data>
+    <data name="Category_Family" xml:space="preserve">
+        <value>Family</value>
+    </data>
+    <data name="Category_Documentary" xml:space="preserve">
+        <value>Documentary</value>
+    </data>
+	<data name="Category_Western" xml:space="preserve">
+        <value>Western</value>
+    </data>
+	<data name="Login" xml:space="preserve">
+        <value>Login</value>
+    </data>
+	<data name="Username" xml:space="preserve">
+        <value>Username</value>
+    </data>
+	<data name="UsernamePlaceholder" xml:space="preserve">
+        <value>Enter your username</value>
+    </data>
+	<data name="Password" xml:space="preserve">
+        <value>Password</value>
+    </data>
+	<data name="PasswordPlaceholder" xml:space="preserve">
+        <value>Enter your password</value>
+    </data>
+	<data name="SignIn" xml:space="preserve">
+        <value>Sign in</value>
+    </data>
+	<data name="NotHaveAccount" xml:space="preserve">
+        <value>Don't have an account?</value>
+    </data>
+	<data name="CreateAccount" xml:space="preserve">
+        <value>Create account</value>
+    </data>
+	<data name="RepeatPassword" xml:space="preserve">
+        <value>Repeat password</value>
+    </data>
+	<data name="Email" xml:space="preserve">
+        <value>Email</value>
+    </data>
+	<data name="Phone" xml:space="preserve">
+        <value>Phone number</value>
+    </data>
+	<data name="ReadRules1" xml:space="preserve">
+        <value>I have read the</value>
+    </data>
+	<data name="Rules" xml:space="preserve">
+        <value>rules</value>
+    </data>
+	<data name="ReadRules2" xml:space="preserve">
+        <value>and I abide by them</value>
+    </data>
+	<data name="Create" xml:space="preserve">
+        <value>Create</value>
+    </data>
+	<data name="LogOut" xml:space="preserve">
+        <value>Log out</value>
+    </data>
+	<data name="UnexpectedError" xml:space="preserve">
+  <value>Something went wrong.</value>
+</data>
+	<data name="NoResultsFound" xml:space="preserve">
+  <value>No results found.</value>
+</data>
+	<data name="SearchError" xml:space="preserve">
+  <value>Error in search:</value>
+</data>
+	<data name="AdminPanel" xml:space="preserve">
+  <value>Admin panel</value>
+</data>
+
+</root>

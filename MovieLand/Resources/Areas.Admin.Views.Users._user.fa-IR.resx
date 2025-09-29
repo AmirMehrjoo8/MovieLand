@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="EditProfileTitle" xml:space="preserve">
+  <value>تغییر اطلاعات حساب</value>
+</data>
+	<data name="UsernameLabel" xml:space="preserve">
+  <value>نام کاربری</value>
+</data>
+	<data name="UsernamePlaceholder" xml:space="preserve">
+  <value>نام کاربری جدید را وارد کنید</value>
+</data>
+	<data name="NameLabel" xml:space="preserve">
+  <value>نام</value>
+</data>
+	<data name="NamePlaceholder" xml:space="preserve">
+  <value>نام جدید را وارد کنید</value>
+</data>
+	<data name="EmailLabel" xml:space="preserve">
+  <value>ایمیل</value>
+</data>
+	<data name="EmailPlaceholder" xml:space="preserve">
+  <value>ایمیل جدید را وارد کنید</value>
+</data>
+	<data name="PasswordLabel" xml:space="preserve">
+  <value>رمز عبور</value>
+</data>
+	<data name="PasswordPlaceholder" xml:space="preserve">
+  <value>رمز عبور جدید را وارد کنید</value>
+</data>
+	<data name="RePasswordLabel" xml:space="preserve">
+  <value>تکرار رمز عبور</value>
+</data>
+	<data name="RePasswordPlaceholder" xml:space="preserve">
+  <value>رمز عبور جدید را تکرار کنید</value>
+</data>
+	<data name="SubmitEditProfile" xml:space="preserve">
+  <value>ثبت</value>
+</data>
+	<data name="PhoneLabel" xml:space="preserve">
+  <value>شماره تماس</value>
+</data>
+	<data name="PhonePlaceholder" xml:space="preserve">
+  <value>شماره تماس جدید را وارد کنید</value>
+</data>
+	<data name="TypeLabel" xml:space="preserve">
+  <value>نوع کاربر</value>
+</data>
+	<data name="Guest" xml:space="preserve">
+  <value>معمولی</value>
+</data>
+	<data name="Admin" xml:space="preserve">
+  <value>ادمین</value>
+</data>
+	<data name="Subscriper" xml:space="preserve">
+  <value>ویژه</value>
+</data>
+	<data name="SubCardLabel" xml:space="preserve">
+  <value>کارت اشتراک</value>
+</data>
+	<data name="NoCard" xml:space="preserve">
+  <value>بدون کارت</value>
+</data>
+	<data name="Bronze" xml:space="preserve">
+  <value>برنز</value>
+</data>
+	<data name="Silver" xml:space="preserve">
+  <value>نقره ای</value>
+</data>
+	<data name="Gold" xml:space="preserve">
+  <value>طلایی</value>
+</data>
+	<data name="RegisterDate" xml:space="preserve">
+  <value>تاریخ ایجاد حساب</value>
+</data>
+	<data name="SubStartDate" xml:space="preserve">
+  <value>تاریخ خرید اشتراک</value>
+</data>
+	<data name="SubExpireDate" xml:space="preserve">
+  <value>تاریخ انقضای اشتراک</value>
+</data>
+	<data name="DeleteEditProfile" xml:space="preserve">
+  <value>حذف</value>
+</data>
+	<data name="dir" xml:space="preserve">
+  <value>rtl</value>
+</data>
+</root>

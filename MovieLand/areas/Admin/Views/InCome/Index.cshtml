@@ -1,0 +1,94 @@
+﻿@using System.Globalization;
+@using System.Text.Json;
+@using Microsoft.AspNetCore.Mvc.Localization;
+@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = Localizer["Title"].Value;
+
+    var lan = CultureInfo.CurrentUICulture.Name == "fa-IR" ? "en-US" : "fa-IR";
+
+    var monthlyData = (MovieLand.Models.ViewModels.MonthlyInComeChartVM)ViewBag.monthly;
+    var yearlyData = (MovieLand.Models.ViewModels.YearlyInComeChartVM)ViewBag.yearly;
+    var totalData = (MovieLand.Models.ViewModels.MultiYearIncomeChartVM)ViewBag.Total;
+}
+
+@section Language {
+    <a class="language text-nowrap" href="/Home/SetLanguage?culture=@lan&returnUrl=/Admin/InCome">@lan</a>
+}
+
+@section head {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+}
+
+<div class="charts-container">
+    <div>
+        <h3>@Localizer["MonthlyChartTitle"]</h3>
+        <canvas id="monthlyChart"></canvas>
+    </div>
+    <div>
+        <h3>@Localizer["YearlyChartTitle"]</h3>
+        <canvas id="yearlyChart"></canvas>
+    </div>
+    <div>
+        <h3>@Localizer["TotalChartTitle"]</h3>
+        <canvas id="totalChart"></canvas>
+    </div>
+
+    <script>
+        const ctxMonth = document.getElementById('monthlyChart').getContext('2d');
+        const ctxYear = document.getElementById('yearlyChart').getContext('2d');
+        const ctxTotal = document.getElementById('totalChart').getContext('2d');
+
+        const labelsMonthly = @Html.Raw(JsonSerializer.Serialize(monthlyData.Days));
+        const goldCardDataMonthly = @Html.Raw(JsonSerializer.Serialize(monthlyData.TotalBuyInDay.Where(c => c.CardId == 4).Select(c => c.TotalBuy)));
+        const silverCardDataMonthly = @Html.Raw(JsonSerializer.Serialize(monthlyData.TotalBuyInDay.Where(c => c.CardId == 3).Select(c => c.TotalBuy)));
+        const bronzCardDataMonthly = @Html.Raw(JsonSerializer.Serialize(monthlyData.TotalBuyInDay.Where(c => c.CardId == 2).Select(c => c.TotalBuy)));
+
+        const labelsYearly = @Html.Raw(JsonSerializer.Serialize(yearlyData.Months, new JsonSerializerOptions { Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping }));
+        const goldCardDataYearly = @Html.Raw(JsonSerializer.Serialize(yearlyData.TotalBuyInMonth.Where(c => c.CardId == 4).Select(c => c.TotalBuy)));
+        const silverCardDataYearly = @Html.Raw(JsonSerializer.Serialize(yearlyData.TotalBuyInMonth.Where(c => c.CardId == 3).Select(c => c.TotalBuy)));
+        const bronzCardDataYearly = @Html.Raw(JsonSerializer.Serialize(yearlyData.TotalBuyInMonth.Where(c => c.CardId == 2).Select(c => c.TotalBuy)));
+
+        const labelsTotal = @Html.Raw(JsonSerializer.Serialize(totalData.Years));
+        const goldCardTotal = @Html.Raw(JsonSerializer.Serialize(totalData.TotalBuyInYear.Where(c => c.CardId == 4).Select(c => c.TotalBuy)));
+        const silverCardTotal = @Html.Raw(JsonSerializer.Serialize(totalData.TotalBuyInYear.Where(c => c.CardId == 3).Select(c => c.TotalBuy)));
+        const bronzeCardTotal = @Html.Raw(JsonSerializer.Serialize(totalData.TotalBuyInYear.Where(c => c.CardId == 2).Select(c => c.TotalBuy)));
+
+        new Chart(ctxMonth, {
+            type: 'line',
+            data: {
+                labels: labelsMonthly,
+                datasets: [
+                    { label: '@Localizer["GoldCard"]', data: goldCardDataMonthly, borderColor: 'gold', fill: false },
+                    { label: '@Localizer["SilverCard"]', data: silverCardDataMonthly, borderColor: 'silver', fill: false },
+                    { label: '@Localizer["BronzeCard"]', data: bronzCardDataMonthly, borderColor: 'brown', fill: false }
+                ]
+            }
+        });
+
+        new Chart(ctxYear, {
+            type: 'line',
+            data: {
+                labels: labelsYearly,
+                datasets: [
+                    { label: '@Localizer["GoldCard"]', data: goldCardDataYearly, borderColor: 'gold', fill: false },
+                    { label: '@Localizer["SilverCard"]', data: silverCardDataYearly, borderColor: 'silver', fill: false },
+                    { label: '@Localizer["BronzeCard"]', data: bronzCardDataYearly, borderColor: 'brown', fill: false }
+                ]
+            }
+        });
+
+        new Chart(ctxTotal, {
+            type: 'line',
+            data: {
+                labels: labelsTotal,
+                datasets: [
+                    { label: '@Localizer["GoldCard"]', data: goldCardTotal, borderColor: 'gold', fill: false },
+                    { label: '@Localizer["SilverCard"]', data: silverCardTotal, borderColor: 'silver', fill: false },
+                    { label: '@Localizer["BronzeCard"]', data: bronzeCardTotal, borderColor: 'brown', fill: false }
+                ]
+            }
+        });
+    </script>
+</div>

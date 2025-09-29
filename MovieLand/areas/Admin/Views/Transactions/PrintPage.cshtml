@@ -1,0 +1,16 @@
+﻿@using Stimulsoft.Report.Mvc
+@using System.Globalization
+
+@{
+    Layout = null;
+}
+<title>مووی لند - تراکنش ها</title>
+<div dir="rtl">
+    @Html.StiNetCoreViewer(new StiNetCoreViewerOptions()
+{
+    Actions ={
+    GetReport = "Print",
+    ViewerEvent = "ViewerEvent"
+    }
+})
+</div>

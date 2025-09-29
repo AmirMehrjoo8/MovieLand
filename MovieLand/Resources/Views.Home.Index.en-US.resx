@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="Language" xml:space="preserve">
+    <value>fa-IR</value>
+  </data>
+  <data name="CurrentLanguage" xml:space="preserve">
+    <value>en-US</value>
+  </data>
+  <data name="ChangeLanguageButton" xml:space="preserve">
+    <value>فارسی</value>
+  </data>
+	<data name="TheBestSeries" xml:space="preserve">
+        <value>The best series</value>
+    </data>
+	<data name="TheBestMovies" xml:space="preserve">
+        <value>The best movies</value>
+    </data>
+	<data name="AdventureMovies" xml:space="preserve">
+        <value>Adventure movies</value>
+    </data>
+	<data name="ActionMovies" xml:space="preserve">
+        <value>Action movies</value>
+    </data>
+	<data name="HorrorMovies" xml:space="preserve">
+        <value>Horror movies</value>
+    </data>
+	<data name="Home" xml:space="preserve">
+        <value>Home</value>
+    </data>
+	<data name="ErrorFetchingData" xml:space="preserve">
+        <value>Error fetching data</value>
+    </data>
+	<data name="NoBackdropFound" xml:space="preserve">
+        <value>No backdrop found for selected movie.</value>
+    </data>
+</root>

@@ -1,0 +1,22 @@
+﻿@using System.Globalization
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = Localizer["AdminPanelTitle"].Value;
+
+    var lan = "";
+    if (CultureInfo.CurrentUICulture.Name == "fa-IR")
+        lan = "en-US";
+    else lan = "fa-IR";
+}
+
+@section Language {
+    <a class="language text-nowrap" href="/Home/SetLanguage?culture=@lan&returnUrl=/Admin/Dashbord">@lan</a>
+}
+
+<div class="greet-container" dir="@Localizer["dir"]">
+    <h1 class="welecome-admin">
+        @Localizer["Hello"] @Context.User.FindFirst("Name")?.Value @Localizer["Dear"],<br />
+        @Localizer["WelcomeToAdminPanel"]
+    </h1>
+</div>

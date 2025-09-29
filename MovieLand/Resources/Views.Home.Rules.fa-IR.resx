@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="PageTitle" xml:space="preserve">
+    <value>قوانین و شرایط استفاده از سایت</value>
+  </data>
+
+  <data name="Section1Title" xml:space="preserve">
+    <value>۱. عضویت و حساب کاربری</value>
+  </data>
+  <data name="Section1Item1" xml:space="preserve">
+    <value>عضویت در سایت برای استفاده از بخش‌های خاص مانند دانلود یا مشاهده با کیفیت بالا ضروری است.</value>
+  </data>
+  <data name="Section1Item2" xml:space="preserve">
+    <value>اطلاعات واردشده هنگام ثبت‌نام باید دقیق، واقعی و متعلق به خود کاربر باشد.</value>
+  </data>
+  <data name="Section1Item3" xml:space="preserve">
+    <value>مسئولیت حفظ نام کاربری و رمز عبور به‌عهده خود کاربر است. در صورت بروز مشکل در حساب، سایت مسئولیتی نخواهد داشت.</value>
+  </data>
+
+  <data name="Section2Title" xml:space="preserve">
+    <value>۲. محتوای سایت</value>
+  </data>
+  <data name="Section2Item1" xml:space="preserve">
+    <value>سایت فقط به معرفی، دانلود و نمایش اطلاعات مربوط به فیلم‌ها و سریال‌های ایرانی و خارجی می‌پردازد.</value>
+  </data>
+  <data name="Section2Item2" xml:space="preserve">
+    <value>تمامی لینک‌های دانلود (در صورت وجود)، صرفاً جهت استفاده شخصی کاربر ارائه می‌شوند و هرگونه استفاده تجاری، اشتراک‌گذاری، یا فروش مجدد آن‌ها ممنوع است.</value>
+  </data>
+  <data name="Section2Item3" xml:space="preserve">
+    <value>مسئولیت نحوه استفاده از محتوای سایت به‌عهده کاربر است.</value>
+  </data>
+
+  <data name="Section3Title" xml:space="preserve">
+    <value>۳. حق مالکیت و کپی‌رایت</value>
+  </data>
+  <data name="Section3Item1" xml:space="preserve">
+    <value>تمامی طراحی‌ها، مطالب، دسته‌بندی‌ها، ترجمه‌ها، و محتواهای اختصاصی سایت (از جمله پوسترها، بنرها و توضیحات فیلم‌ها) متعلق به سایت بوده و هرگونه کپی‌برداری بدون اجازه کتبی ممنوع است.</value>
+  </data>
+  <data name="Section3Item2" xml:space="preserve">
+    <value>در صورتی که محتوای خاصی مربوط به صاحبان حقوق بین‌المللی باشد، کاربر باید قوانین کپی‌رایت کشور خود را رعایت کند.</value>
+  </data>
+
+  <data name="Section4Title" xml:space="preserve">
+    <value>۴. اشتراک‌های ویژه</value>
+  </data>
+  <data name="Section4Item1" xml:space="preserve">
+    <value>برخی امکانات سایت (مثل دانلود با کیفیت بالا یا پخش بدون تبلیغات) فقط برای کاربران دارای اشتراک ویژه فعال است.</value>
+  </data>
+  <data name="Section4Item2" xml:space="preserve">
+    <value>اشتراک‌ها ماهانه، سه‌ماهه یا سالانه قابل خرید هستند و به صورت خودکار تمدید نمی‌شوند.</value>
+  </data>
+  <data name="Section4Item3" xml:space="preserve">
+    <value>هزینه پرداخت‌شده قابل بازگشت نیست، مگر در شرایط خاصی مانند مشکل فنی اثبات‌شده از سمت سایت.</value>
+  </data>
+
+  <data name="Section5Title" xml:space="preserve">
+    <value>۵. فعالیت کاربران و نظرات</value>
+  </data>
+  <data name="Section5Item1" xml:space="preserve">
+    <value>ثبت دیدگاه یا هر نوع فعالیت تعاملی باید با رعایت ادب، احترام و قوانین کشور باشد.</value>
+  </data>
+  <data name="Section5Item2" xml:space="preserve">
+    <value>ارسال هرگونه پیام توهین‌آمیز، غیراخلاقی یا سیاسی ممنوع بوده و منجر به مسدود شدن حساب کاربر می‌شود.</value>
+  </data>
+  <data name="Section5Item3" xml:space="preserve">
+    <value>نظرات کاربران تنها بیانگر دیدگاه شخصی آن‌ها بوده و لزوماً مورد تأیید سایت نیست.</value>
+  </data>
+
+  <data name="Section6Title" xml:space="preserve">
+    <value>۶. مسئولیت‌ها و محدودیت‌ها</value>
+  </data>
+  <data name="Section6Item1" xml:space="preserve">
+    <value>سایت تلاش می‌کند اطلاعات دقیق و به‌روز درباره فیلم‌ها و سریال‌ها ارائه دهد، اما تضمینی درباره کامل بودن یا صحت ۱۰۰٪ اطلاعات وجود ندارد.</value>
+  </data>
+  <data name="Section6Item2" xml:space="preserve">
+    <value>سایت ممکن است به‌صورت موقت یا دائم بخش‌هایی از سرویس خود را تغییر داده یا غیرفعال کند.</value>
+  </data>
+
+  <data name="Section7Title" xml:space="preserve">
+    <value>۷. حریم خصوصی</value>
+  </data>
+  <data name="Section7Item1" xml:space="preserve">
+    <value>اطلاعات شخصی کاربران (نام، ایمیل، شماره تماس و...) نزد سایت محفوظ است و بدون رضایت آن‌ها در اختیار هیچ شخص یا نهاد ثالثی قرار نخواهد گرفت.</value>
+  </data>
+  <data name="Section7Item2" xml:space="preserve">
+    <value>برای بهبود تجربه کاربری و امنیت، ممکن است از کوکی‌ها یا ابزارهای تحلیلی استفاده شود.</value>
+  </data>
+
+  <data name="Section8Title" xml:space="preserve">
+    <value>۸. تماس با پشتیبانی</value>
+  </data>
+  <data name="Section8Item1" xml:space="preserve">
+    <value>در صورت وجود هرگونه مشکل یا سؤال، از طریق فرم تماس با ما یا ایمیل رسمی سایت می‌توانید با تیم پشتیبانی در ارتباط باشید.</value>
+  </data>
+</root>

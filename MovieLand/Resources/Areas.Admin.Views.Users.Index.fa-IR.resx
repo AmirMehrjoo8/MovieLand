@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="dir">
+		<value>rtl</value>
+	</data>
+	<data name="UsersTitle">
+		<value>مدیریت کاربران</value>
+	</data>
+	<data name="AdminCount">
+		<value>تعداد ادمین‌ها</value>
+	</data>
+	<data name="RegularUsers">
+		<value>کاربران معمولی</value>
+	</data>
+	<data name="VipUsers">
+		<value>کاربران ویژه</value>
+	</data>
+	<data name="SearchPlaceholder">
+		<value>جست‌وجو...</value>
+	</data>
+	<data name="FoundUsersCount">
+		<value>{0} کاربر با عبارت '{1}' پیدا شد.</value>
+	</data>
+
+</root>

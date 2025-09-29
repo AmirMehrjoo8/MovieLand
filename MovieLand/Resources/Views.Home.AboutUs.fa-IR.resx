@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="Language" xml:space="preserve">
+    <value>en-US</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>درباره ما</value>
+  </data>
+  <data name="Paragraph1" xml:space="preserve">
+    <value>سایت ما با هدف جمع‌آوری و معرفی بهترین فیلم‌ها و سریال‌های روز دنیا راه‌اندازی شده است. با بهره‌گیری از رابط کاربری ساده و جذاب، شما می‌توانید به راحتی ژانر مورد علاقه‌تان را انتخاب کرده، فیلم یا سریال مورد نظرتان را جست‌وجو کنید و اطلاعات کامل آن را مشاهده نمایید.</value>
+  </data>
+  <data name="Paragraph2" xml:space="preserve">
+    <value>ما با عشق به دنیای سینما، تلاش می‌کنیم محتوایی دقیق، به‌روز و کاربرپسند ارائه دهیم تا تجربه‌ای متفاوت از مرور و کشف آثار سینمایی برای شما فراهم شود.</value>
+  </data>
+</root>

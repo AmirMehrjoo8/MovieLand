@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="EditProfileTitle" xml:space="preserve">
+  <value>Edit Account Information</value>
+</data>
+	<data name="UsernameLabel" xml:space="preserve">
+  <value>Username</value>
+</data>
+	<data name="UsernamePlaceholder" xml:space="preserve">
+  <value>Enter your new username</value>
+</data>
+	<data name="NameLabel" xml:space="preserve">
+  <value>Name</value>
+</data>
+	<data name="NamePlaceholder" xml:space="preserve">
+  <value>Enter your new name</value>
+</data>
+	<data name="EmailLabel" xml:space="preserve">
+  <value>Email</value>
+</data>
+	<data name="EmailPlaceholder" xml:space="preserve">
+  <value>Enter your new email</value>
+</data>
+	<data name="PasswordLabel" xml:space="preserve">
+  <value>Password</value>
+</data>
+	<data name="PasswordPlaceholder" xml:space="preserve">
+  <value>Enter your new password</value>
+</data>
+	<data name="RePasswordLabel" xml:space="preserve">
+  <value>Repeat Password</value>
+</data>
+	<data name="RePasswordPlaceholder" xml:space="preserve">
+  <value>Repeat your new password</value>
+</data>
+	<data name="SubmitEditProfile" xml:space="preserve">
+  <value>Submit</value>
+</data>
+</root>

@@ -1,0 +1,45 @@
+﻿@model MovieLand.Models.ViewModels.LoginVM
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">@Localizer["Login"]</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                @if (TempData["LoginError"] != null)
+                {
+                    <div class="text-danger text-center">
+                        @TempData["LoginError"]
+                    </div>
+                }
+                <form asp-action="Login" asp-controller="Account" id="loginForm">
+                    <input type="hidden" value="@Localizer["Language"]" name="lan"/>
+                    <div class="mb-3">
+                        <label class="form-label">@Localizer["Username"]</label><span asp-validation-for="Username" class="text-danger"></span>
+                            <input asp-for="Username" class="form-control" placeholder="@Localizer["UsernamePlaceholder"]" value="@TempData["Username"]">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">@Localizer["Password"]</label><span asp-validation-for="Password" class="text-danger"></span>
+                        <input asp-for="Password" class="form-control" placeholder="@Localizer["PasswordPlaceholder"]">
+                        
+                    </div>
+                    <div class=".rememberMe">
+                        <input asp-for="RememberMe"><span>
+                            @Localizer["RmmbrMe"]
+                        </span>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">@Localizer["SignIn"]</button>
+                </form>
+                <div class="mt-3 text-center">
+                    @Localizer["NotHaveAccount"]
+                    <a href="#" id="showRegister">@Localizer["CreateAccount"]</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

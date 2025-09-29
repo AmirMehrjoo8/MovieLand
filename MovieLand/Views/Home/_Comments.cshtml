@@ -1,0 +1,177 @@
+﻿@model MovieLand.Models.ViewModels.CommentVM
+@using System.Globalization
+@using MovieLand.Classes
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer
+@{
+    var comments = Model.Comments; // کامنت های اصلی
+    var replies = Model.Replies; // همه ریپلای ها
+
+    int commentsCount = comments.Count();
+}
+
+
+<div class="top" dir="@Localizer["dir"]">
+    <h2>@Localizer["Comments"]:</h2>
+    <button class="btn btn-danger"
+            type="button"
+            id="showCommentModal">
+        @Localizer["AddComment"]
+    </button>
+</div>
+<div class="modal fade" id="comment-modal" dir="@Localizer["dir"]">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">@Localizer["AddComment"]</h5>
+                <button class="close"
+                        type="button"
+                        data-bs-dismiss="modal"
+                        style="border: 0; background: none">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             width="25"
+                             height="25"
+                             fill="currentColor"
+                             class="bi bi-x"
+                             viewBox="0 0 16 16">
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                        </svg>
+                    </span>
+                </button>
+            </div>
+            <form asp-action="AddComment" asp-controller="Home" method="post">
+                @if (TempData["CommentError"] != null)
+                {
+                    <div class="text-danger text-center">
+                        @TempData["CommentError"]
+                    </div>
+                }
+                <input type="hidden" name="lan" value="@Localizer["CurrentLanguage"]" />
+                <input type="hidden" name="postFormat" value="@TempData["postFormat"]" />
+                <input type="hidden" name="postId" value="@TempData["postId"]" />
+                <input type="hidden" name="repliedCommentId" value="0" />
+                <div class="modal-body">
+                    <textarea class="tex"
+                              name="commentText"
+                              id=""
+                              placeholder="@Localizer["TypeHere"]"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary"
+                            type="submit"
+                            data-bs-dismiss="modal">
+                        @Localizer["Submit"]
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="comments" dir="@Localizer["dir"]">
+    @if (commentsCount == 0)
+    {
+        <div class="comment text-center">
+            <h5>@Localizer["NoComment"]</h5>
+        </div>
+    }
+    @foreach (var item in comments)
+    {
+        var modalId = $"reply-modal-{item.CommentId}";
+        <div class="modal fade" id="@modalId" dir="@Localizer["dir"]">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">@Localizer["AddReply"] <span class="text-secondary">@item.User.Username</span></h5>
+                        <button class="close"
+                                type="button"
+                                data-bs-dismiss="modal"
+                                style="border: 0; background: none">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                     width="25"
+                                     height="25"
+                                     fill="currentColor"
+                                     class="bi bi-x"
+                                     viewBox="0 0 16 16">
+                                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <form asp-action="AddComment" asp-controller="Home" method="post">
+                        @if (TempData["ReplyError"] != null)
+                        {
+                            <div class="text-danger text-center">
+                                @TempData["ReplyError"]
+                            </div>
+                        }
+                        <input type="hidden" name="lan" value="@Localizer["CurrentLanguage"]" />
+                        <input type="hidden" name="postFormat" value="@TempData["postFormat"]" />
+                        <input type="hidden" name="postId" value="@TempData["postId"]" />
+                        <input type="hidden" name="repliedCommentId" value="@item.CommentId" />
+                        <div class="modal-body">
+                            <textarea class="tex"
+                                      name="commentText"
+                                      id=""
+                                      placeholder="@Localizer["TypeHere"]"></textarea>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary"
+                                    type="submit"
+                                    data-bs-dismiss="modal">
+                                @Localizer["Submit"]
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="comment">
+            <div class="top-comment">
+                <div class="right">
+                    <img src="@UserProfile.ProfilePictureLocation(item.UserId.ToString())" />
+                    <span class="name">@item.User.Username</span>
+                </div>
+                <span class="date h6">@ConvertDate.ToShamsi(item.AddedDateTime)</span>
+            </div>
+            <div class="bottom-comment">
+                <div class="right">
+                    <p>
+                        @item.Text
+                    </p>
+                    @if (replies.Where(c => c.RepliedCommentId == item.CommentId).Count() > 0)
+                    {
+                        <a href="" class="reply-show">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
+                            </svg>
+                        </a>
+                    }
+                </div>
+                <button class="showReplyModal btn reply-btn"
+                        type="button"
+                        data-modal-id="@modalId">
+                    @Localizer["Reply"]
+                </button>
+            </div>
+            <div class="replys">
+                @foreach (var reply in replies.Where(c => c.RepliedCommentId == item.CommentId))
+                {
+                    <div class="reply">
+                        <div class="top-reply">
+                            <div class="right">
+                                <img src="@UserProfile.ProfilePictureLocation(reply.UserId.ToString())" />
+                                <span class="name">@reply.User.Username</span>
+                            </div>
+                            <span class="date">@ConvertDate.ToShamsi(reply.AddedDateTime)</span>
+                        </div>
+                        <div class="bottom-reply">
+                            <p>@reply.Text</p>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    }
+</div>

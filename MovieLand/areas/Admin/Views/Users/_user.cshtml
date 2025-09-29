@@ -1,0 +1,162 @@
+﻿@using MovieLand.Classes
+@model MovieLand.Models.User
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer;
+@{
+    var modalId = $"ProfileEditModal-{Model.UserId}";
+
+
+    var types = new List<dynamic>
+        {
+        new { Id = 0, Title = "Guest"},
+        new { Id = 1, Title = "Admin"},
+        new { Id = 2, Title = "Subscriper"}
+        };
+
+    var activeType = types.FirstOrDefault(c => c.Id == Model.Type);
+    var otherTypes = types.Where(c => c.Id != Model.Type).ToList();
+
+
+    var cards = new List<dynamic>
+        {
+        new { Id = 1, Title = "NoCard"},
+        new { Id = 2, Title = "Bronze"},
+        new { Id = 3, Title = "Silver"},
+        new { Id = 4, Title = "Gold"}
+        };
+
+    var activeCard = cards.FirstOrDefault(c => c.Id == Model.SubCardId);
+    var otherCards = cards.Where(c => c.Id != Model.SubCardId).ToList();
+}
+<div class="modal fade ProfileEditModal"
+    dir="@Localizer["dir"]"
+     id="@modalId"
+     tabindex="-1"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">@Localizer["EditProfileTitle"]</h5>
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="@TempData["color"] text-center">
+                    @TempData["EditProfileError-" + Model.UserId]
+                </div>
+                <form asp-action="EditProfile"
+                      asp-controller="Users"
+                      asp-area="Admin"
+                      method="post"
+                      enctype="multipart/form-data">
+                    <input type="hidden" asp-for="UserId" />
+                    <div class="profile-upload">
+                        <input type="file"
+                               id="profilePicInput-@Model.UserId"
+                               name="ProfilePicture"
+                               accept="image/*"
+                               hidden />
+                        <label for="profilePicInput-@Model.UserId">
+                            <img id="profilePicPreview-@Model.UserId"
+                                 src="@UserProfile.ProfilePictureLocation(Model.UserId.ToString())"
+                                 alt="Profile Picture" />
+                        </label>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">@Localizer["UsernameLabel"]</label>
+                        <span asp-validation-for="Username"
+                              class="text-danger"></span>
+                        <input class="form-control"
+                               placeholder="@Localizer["UsernamePlaceholder"]"
+                               asp-for="Username" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">@Localizer["NameLabel"]</label>
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                        <input class="form-control"
+                               placeholder="@Localizer["NamePlaceholder"]" asp-for="Name" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">@Localizer["EmailLabel"]</label>
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                        <input class="form-control"
+                               placeholder="@Localizer["EmailPlaceholder"]" asp-for="Email" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">@Localizer["PhoneLabel"]</label>
+                        <span asp-validation-for="Phone" class="text-danger"></span>
+                        <input class="form-control"
+                               placeholder="@Localizer["PhonePlaceholder"]" asp-for="Phone" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">@Localizer["PasswordLabel"] </label>
+                        <span asp-validation-for="Password"
+                              class="text-danger"></span>
+                        <input class="form-control"
+                               placeholder="@Localizer["PasswordPlaceholder"]"
+                               asp-for="Password" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">@Localizer["TypeLabel"]</label>
+                        <select asp-for="Type" class="form-control">
+                            <option value="@activeType.Id">@Localizer[activeType.Title]</option>
+                            <option value="@otherTypes[0].Id">@Localizer[otherTypes[0].Title]</option>
+                            <option value="@otherTypes[1].Id">@Localizer[otherTypes[1].Title]</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">@Localizer["SubCardLabel"]</label>
+                        <select asp-for="SubCardId" class="form-control">
+                            <option value="@activeCard.Id">@Localizer[activeCard.Title]</option>
+                            <option value="@otherCards[0].Id">@Localizer[otherCards[0].Title]</option>
+                            <option value="@otherCards[1].Id">@Localizer[otherCards[1].Title]</option>
+                            <option value="@otherCards[2].Id">@Localizer[otherCards[2].Title]</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="form-label">@Localizer["RegisterDate"]: </label>
+                        <input type="hidden" asp-for="RegisterDate" />
+                        @ConvertDate.SimpleDateTimeByLanguage(Model.RegisterDate)
+                    </div>
+                    <div>
+                        <label class="form-label">@Localizer["SubStartDate"]: </label>
+                        <input type="hidden" asp-for="SubStartDate" />
+                        @ConvertDate.SimpleDateTimeByLanguage(Model.SubStartDate)
+                    </div>
+                    <div>
+                        <label class="form-label">@Localizer["SubExpireDate"]: </label>
+                        <input type="hidden" asp-for="SubExpireDate" />
+                        @ConvertDate.SimpleDateTimeByLanguage(Model.SubExpireDate)
+                    </div>
+                    <div class="bottom-buttons">
+                        <button type="submit" class="btn btn-primary ">
+                            @Localizer["SubmitEditProfile"]
+                        </button>
+                        <a asp-action="DeleteAccount"
+                         asp-controller="Users"
+                         asp-area="Admin"
+                         asp-route-id="@Model.UserId"
+                         class="btn btn-primary @(Model.UserId==1?"disabled":"")">
+                            @Localizer["DeleteEditProfile"]
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<a href=""
+   class="user showUserModal"
+   data-bs-toggle="modal"
+   data-bs-target="#@modalId">
+    <img src="@UserProfile.ProfilePictureLocation(Model.UserId.ToString())"
+         alt="" />
+    <span>@Model.Username</span>
+</a>

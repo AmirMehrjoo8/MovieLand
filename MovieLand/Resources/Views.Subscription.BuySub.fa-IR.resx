@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="Language" xml:space="preserve">
+    <value>en-US</value>
+  </data>
+	<data name="SubscriptionTitle" xml:space="preserve">
+    <value>خرید اشتراک</value>
+  </data>
+	<data name="Description" xml:space="preserve">
+    <value>با خرید اشتراک ویژه «مووی‌لند»، تجربه‌ای بدون تبلیغات، با دسترسی کامل به هزاران فیلم و سریال با کیفیت بالا خواهید داشت.
+پلن‌های متنوع اشتراک (طلایی، نقره‌ای، برنزی) با توجه به نیاز و بودجه‌ی شما طراحی شده‌اند تا بهترین انتخاب را داشته باشید.
+از پشتیبانی ویژه تا امکان دانلود نامحدود، همه چیز برای لذت بردن بی‌وقفه از تماشای فیلم و سریال فراهم است.</value>
+  </data>
+	<data name="Warning" xml:space="preserve">
+    <value>توجه! درصورت خرید کارت اشتراک، کارت جدید جایگزین کارت قبلی میشود و زمان باقی مانده اشتراک فعلی صفر میشود.</value>
+  </data>
+
+	<data name="GoldPlanTitle" xml:space="preserve">
+    <value>اشتراک طلایی</value>
+  </data>
+	<data name="GoldPlanFeatures" xml:space="preserve">
+    <value>حذف تبلیغات, قابلیت دانلود نامحدود, پشتیبانی ویژه</value>
+  </data>
+	<data name="SilverPlanTitle" xml:space="preserve">
+    <value>اشتراک نقره‌ای</value>
+  </data>
+	<data name="SilverPlanFeatures" xml:space="preserve">
+    <value>حذف تبلیغات, قابلیت دانلود نامحدود, پشتیبانی معمولی</value>
+  </data>
+	<data name="Duration" xml:space="preserve">
+    <value>ماهه</value>
+  </data>
+	<data name="BronzePlanTitle" xml:space="preserve">
+    <value>اشتراک برنز</value>
+  </data>
+	<data name="BronzePlanFeatures" xml:space="preserve">
+    <value>حذف تبلیغات, قابلیت دانلود محدود, بدون پشتیبانی</value>
+  </data>
+	<data name="Price" xml:space="preserve">
+    <value>تومان</value>
+  </data>
+	<data name="DiscountCode" xml:space="preserve">
+    <value>کد تخفیف</value>
+  </data>
+	<data name="DiscountCodePlaceholder" xml:space="preserve">
+    <value>کد تخفیف خود را وارد کنید</value>
+  </data>
+	<data name="Buy" xml:space="preserve">
+    <value>خرید</value>
+  </data>
+</root>

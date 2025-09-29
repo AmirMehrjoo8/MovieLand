@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="Print" xml:space="preserve">
+  <value>Print:</value>
+</data>
+<data name="SuccessfulTransactions" xml:space="preserve">
+  <value>Successful Transactions</value>
+</data>
+<data name="UnsuccessfulTransactions" xml:space="preserve">
+  <value>Unsuccessful Transactions</value>
+</data>
+<data name="AllTransactions" xml:space="preserve">
+  <value>All Transactions</value>
+</data>
+<data name="Transactions" xml:space="preserve">
+  <value>Transactions:</value>
+</data>
+<data name="Username" xml:space="preserve">
+  <value>Username</value>
+</data>
+<data name="Card" xml:space="preserve">
+  <value>Card</value>
+</data>
+<data name="Amount" xml:space="preserve">
+  <value>Amount (Toman)</value>
+</data>
+<data name="Date" xml:space="preserve">
+  <value>Transaction Date</value>
+</data>
+<data name="Status" xml:space="preserve">
+  <value>Status</value>
+</data>
+<data name="Success" xml:space="preserve">
+  <value>Success</value>
+</data>
+<data name="Failed" xml:space="preserve">
+  <value>Failed</value>
+</data>
+<data name="dir" xml:space="preserve">
+  <value>ltr</value>
+</data>
+<data name="Title" xml:space="preserve">
+  <value>Transaction</value>
+</data>
+
+</root>

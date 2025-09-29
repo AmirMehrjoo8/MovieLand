@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="WebName" xml:space="preserve">
+        <value>مووی لند</value>
+    </data>
+	<data name="dir" xml:space="preserve">
+        <value>rtl</value>
+    </data>
+	<data name="Home" xml:space="preserve">
+        <value>خانه</value>
+    </data>
+	<data name="Category" xml:space="preserve">
+        <value>دسته بندی</value>
+    </data>
+	<data name="AboutUs" xml:space="preserve">
+        <value>درباره ما</value>
+    </data>
+	<data name="Profile" xml:space="preserve">
+        <value>پروفایل</value>
+    </data>
+	<data name="Search" xml:space="preserve">
+        <value>جست و جو...</value>
+    </data>
+	<data name="BuySub" xml:space="preserve">
+        <value>خرید اشتراک</value>
+    </data>
+	<data name="Login" xml:space="preserve">
+        <value>ورود</value>
+    </data>
+	<data name="RulesAndRegulations" xml:space="preserve">
+        <value>قوانین و مقررات</value>
+    </data>
+	<data name="Advertisements" xml:space="preserve">
+        <value>تبلیغات</value>
+    </data>
+	<data name="UserPrivacy" xml:space="preserve">
+        <value>حریم خصوصی کاربران</value>
+    </data>
+	<data name="Socialmedia" xml:space="preserve">
+        <value>شبکه های اجتماعی</value>
+    </data>
+	<data name="AllRightsReserved" xml:space="preserve">
+        <value>کلیه حقوق این وب‌سایت محفوظ است.</value>
+    </data>
+	<data name="Category_Adventure" xml:space="preserve">
+        <value>ماجراجویی</value>
+    </data>
+    <data name="Category_Comedy" xml:space="preserve">
+        <value>کمدی</value>
+    </data>
+    <data name="Category_Action" xml:space="preserve">
+        <value>اکشن</value>
+    </data>
+    <data name="Category_Animation" xml:space="preserve">
+        <value>انیمیشن</value>
+    </data>
+    <data name="Category_Crime" xml:space="preserve">
+        <value>جنایی</value>
+    </data>
+    <data name="Category_Mystery" xml:space="preserve">
+        <value>معمایی</value>
+    </data>
+    <data name="Category_Drama" xml:space="preserve">
+        <value>درام</value>
+    </data>
+    <data name="Category_Family" xml:space="preserve">
+        <value>خانوادگی</value>
+    </data>
+    <data name="Category_Documentary" xml:space="preserve">
+        <value>مستند</value>
+    </data>
+    <data name="Category_Western" xml:space="preserve">
+        <value>وسترن</value>
+    </data>
+	<data name="Login" xml:space="preserve">
+        <value>ورود</value>
+    </data>
+	<data name="Username" xml:space="preserve">
+        <value>نام کاربری</value>
+    </data>
+	<data name="UsernamePlaceholder" xml:space="preserve">
+        <value>نام کاربری خود را وارد کنید</value>
+    </data>
+	<data name="Password" xml:space="preserve">
+        <value>رمز عبور</value>
+    </data>
+	<data name="PasswordPlaceholder" xml:space="preserve">
+        <value>رمز عبور خود را وارد کنید</value>
+    </data>
+	<data name="SignIn" xml:space="preserve">
+        <value>ورود</value>
+    </data>
+	<data name="NotHaveAccount" xml:space="preserve">
+        <value>حساب کاربری ندارید؟</value>
+    </data>
+	<data name="CreateAccount" xml:space="preserve">
+        <value>ثبت نام</value>
+    </data>
+	<data name="RepeatPassword" xml:space="preserve">
+        <value>تکرار رمز عبور</value>
+    </data>
+	<data name="Email" xml:space="preserve">
+        <value>ایمیل</value>
+    </data>
+	<data name="Phone" xml:space="preserve">
+        <value>شماره تلفن</value>
+    </data>
+	<data name="ReadRules1" xml:space="preserve">
+        <value></value>
+    </data>
+	<data name="Rules" xml:space="preserve">
+        <value>قوانین</value>
+    </data>
+	<data name="ReadRules2" xml:space="preserve">
+        <value>را مطالعه کرده ام و به آنها پایبندم</value>
+    </data>
+	<data name="Create" xml:space="preserve">
+        <value>ثبت نام</value>
+    </data>
+	<data name="LogOut" xml:space="preserve">
+        <value>خروج</value>
+    </data>
+	<data name="UnexpectedError" xml:space="preserve">
+  <value>مشکلی پیش آمده.</value>
+</data>
+	<data name="NoResultsFound" xml:space="preserve">
+  <value>نتیجه‌ای یافت نشد.</value>
+</data>
+	<data name="SearchError" xml:space="preserve">
+  <value>خطا در جستجو:</value>
+</data>
+	<data name="AdminPanel" xml:space="preserve">
+  <value>پنل ادمین</value>
+</data>
+</root>

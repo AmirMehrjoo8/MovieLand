@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="dir" xml:space="preserve">
+		<value>rtl</value>
+	</data>
+	<data name="Reply" xml:space="preserve">
+		<value>پاسخ</value>
+	</data>
+	<data name="CurrentLanguage" xml:space="preserve">
+    <value>fa-IR</value>
+  </data>
+	<data name="SectionBorder" xml:space="preserve">
+    <value>left</value>
+  </data>
+	<data name="NoComment" xml:space="preserve">
+    <value>کامنتی ثبت نشده. اولین نفر باش!</value>
+  </data>
+	<data name="Comments" xml:space="preserve">
+  <value>نظرات</value>
+</data>
+	<data name="AddComment" xml:space="preserve">
+  <value>افزودن نظر</value>
+</data>
+	<data name="AddReply" xml:space="preserve">
+  <value>افزودن پاسخ به</value>
+</data>
+	<data name="TypeHere" xml:space="preserve">
+  <value>تایپ کنید...</value>
+</data>
+	<data name="Submit" xml:space="preserve">
+  <value>ثبت</value>
+</data>
+	<data name="Reply" xml:space="preserve">
+  <value>پاسخ</value>
+</data>
+</root>

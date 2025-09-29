@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="PageTitle" xml:space="preserve">
+    <value>Terms and Conditions of Use</value>
+  </data>
+
+  <data name="Section1Title" xml:space="preserve">
+    <value>1. Membership and Account</value>
+  </data>
+  <data name="Section1Item1" xml:space="preserve">
+    <value>Membership on the site is required to access special sections such as downloading or high-quality viewing.</value>
+  </data>
+  <data name="Section1Item2" xml:space="preserve">
+    <value>Information entered during registration must be accurate, real, and belong to the user.</value>
+  </data>
+  <data name="Section1Item3" xml:space="preserve">
+    <value>The user is responsible for keeping their username and password safe. The site is not responsible for any account issues.</value>
+  </data>
+
+  <data name="Section2Title" xml:space="preserve">
+    <value>2. Site Content</value>
+  </data>
+  <data name="Section2Item1" xml:space="preserve">
+    <value>The site only introduces, provides downloads, and displays information about Iranian and foreign movies and series.</value>
+  </data>
+  <data name="Section2Item2" xml:space="preserve">
+    <value>All download links (if available) are provided solely for personal use. Any commercial use, sharing, or resale is prohibited.</value>
+  </data>
+  <data name="Section2Item3" xml:space="preserve">
+    <value>The user is responsible for how they use the site's content.</value>
+  </data>
+
+  <data name="Section3Title" xml:space="preserve">
+    <value>3. Ownership and Copyright</value>
+  </data>
+  <data name="Section3Item1" xml:space="preserve">
+    <value>All designs, materials, categories, translations, and exclusive content of the site (including posters, banners, and film descriptions) belong to the site, and any copying without written permission is prohibited.</value>
+  </data>
+  <data name="Section3Item2" xml:space="preserve">
+    <value>If specific content belongs to international rights holders, users must comply with their country's copyright laws.</value>
+  </data>
+
+  <data name="Section4Title" xml:space="preserve">
+    <value>4. Premium Subscriptions</value>
+  </data>
+  <data name="Section4Item1" xml:space="preserve">
+    <value>Some site features (such as high-quality downloads or ad-free streaming) are only available to active premium subscribers.</value>
+  </data>
+  <data name="Section4Item2" xml:space="preserve">
+    <value>Subscriptions can be purchased monthly, quarterly, or yearly and do not renew automatically.</value>
+  </data>
+  <data name="Section4Item3" xml:space="preserve">
+    <value>Payments are non-refundable except in specific cases such as proven technical issues on the site.</value>
+  </data>
+
+  <data name="Section5Title" xml:space="preserve">
+    <value>5. User Activities and Comments</value>
+  </data>
+  <data name="Section5Item1" xml:space="preserve">
+    <value>Posting comments or any interactive activity must observe politeness, respect, and national laws.</value>
+  </data>
+  <data name="Section5Item2" xml:space="preserve">
+    <value>Sending any insulting, immoral, or political messages is prohibited and may lead to account suspension.</value>
+  </data>
+  <data name="Section5Item3" xml:space="preserve">
+    <value>User comments represent personal opinions and are not necessarily endorsed by the site.</value>
+  </data>
+
+  <data name="Section6Title" xml:space="preserve">
+    <value>6. Responsibilities and Limitations</value>
+  </data>
+  <data name="Section6Item1" xml:space="preserve">
+    <value>The site tries to provide accurate and up-to-date information about movies and series but does not guarantee 100% completeness or accuracy.</value>
+  </data>
+  <data name="Section6Item2" xml:space="preserve">
+    <value>The site may temporarily or permanently change or disable parts of its service.</value>
+  </data>
+
+  <data name="Section7Title" xml:space="preserve">
+    <value>7. Privacy</value>
+  </data>
+  <data name="Section7Item1" xml:space="preserve">
+    <value>Users' personal information (name, email, contact number, etc.) is kept confidential and will not be shared with any third party without consent.</value>
+  </data>
+  <data name="Section7Item2" xml:space="preserve">
+    <value>Cookies and analytical tools may be used to improve user experience and security.</value>
+  </data>
+
+  <data name="Section8Title" xml:space="preserve">
+    <value>8. Contact Support</value>
+  </data>
+  <data name="Section8Item1" xml:space="preserve">
+    <value>If you have any issues or questions, you can contact our support team via the contact form or the official site email.</value>
+  </data>
+</root>

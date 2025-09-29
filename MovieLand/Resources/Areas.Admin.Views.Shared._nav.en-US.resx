@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="Dashboard">
+		<value>Dashboard</value>
+	</data>
+	<data name="Users">
+		<value>Users</value>
+	</data>
+	<data name="Transactions">
+		<value>Transactions</value>
+	</data>
+	<data name="DiscountCodes">
+		<value>Discount Codes</value>
+	</data>
+	<data name="SubscriptionCards">
+		<value>Subscription Cards</value>
+	</data>
+	<data name="Revenue">
+		<value>Revenue</value>
+	</data>
+	<data name="MovieLand">
+		<value>MovieLand</value>
+	</data>
+	<data name="ContactMsg">
+		<value>Contacts message</value>
+	</data>
+
+</root>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="Language" xml:space="preserve">
+    <value>fa-IR</value>
+  </data>
+  <data name="CurrentLanguage" xml:space="preserve">
+    <value>en-US</value>
+  </data>
+	<data name="ChangeLanguageButton" xml:space="preserve">
+    <value>فارسی</value>
+  </data>
+	<data name="Username" xml:space="preserve">
+    <value>Username</value>
+  </data>
+	<data name="Phone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+	<data name="AccountType" xml:space="preserve">
+    <value>Account type</value>
+  </data>
+	<data name="EditProfile" xml:space="preserve">
+    <value>Edit profile</value>
+  </data>
+	<data name="SubInfo" xml:space="preserve">
+    <value>Subscription information</value>
+  </data>
+	<data name="GoldSubscription" xml:space="preserve">
+    <value>Gold Subscription</value>
+  </data>
+	<data name="SilverSubscription" xml:space="preserve">
+    <value>Silver Subscription</value>
+  </data>
+	<data name="BronzeSubscription" xml:space="preserve">
+    <value>Bronze Subscription</value>
+  </data>
+	<data name="RemoveAds" xml:space="preserve">
+    <value>Ad-free experience</value>
+  </data>
+	<data name="UnlimitedDownloads" xml:space="preserve">
+    <value>Unlimited downloads</value>
+  </data>
+	<data name="LimitedDownloads" xml:space="preserve">
+    <value>Limited downloads</value>
+  </data>
+	<data name="PrioritySupport" xml:space="preserve">
+    <value>Priority support</value>
+  </data>
+	<data name="StandardSupport" xml:space="preserve">
+    <value>Standard support</value>
+  </data>
+	<data name="NoSupport" xml:space="preserve">
+    <value>No support</value>
+  </data>
+	<data name="12Months" xml:space="preserve">
+    <value>1 Year</value>
+  </data>
+	<data name="6Months" xml:space="preserve">
+    <value>6 Months</value>
+  </data>
+	<data name="3Months" xml:space="preserve">
+    <value>3 Months</value>
+  </data>
+	<data name="TimeRemaining" xml:space="preserve">
+    <value>Time remaining</value>
+  </data>
+	<data name="NoSubTitle" xml:space="preserve">
+  <value>You don't have an active subscription</value>
+</data>
+	<data name="NoSubErrMsg" xml:space="preserve">
+  <value>To access premium features like unlimited downloads, ad-free experience, and better support, please choose one of our subscription plans.</value>
+</data>
+	<data name="BuySub" xml:space="preserve">
+  <value>Buy Subscription</value>
+</data>
+	<data name="Profile" xml:space="preserve">
+	<value>Profile</value>
+</data>
+	<data name="AdminPanel" xml:space="preserve">
+  <value>Admin panel</value>
+</data>
+</root>

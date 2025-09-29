@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+	<data name="dir" xml:space="preserve">
+    <value>rtl</value>
+  </data>
+	<data name="Language" xml:space="preserve">
+    <value>en-US</value>
+  </data>
+  <data name="CurrentLanguage" xml:space="preserve">
+    <value>fa-IR</value>
+  </data>
+  <data name="ChangeLanguageButton" xml:space="preserve">
+    <value>English</value>
+  </data>
+	<data name="SectionBorder" xml:space="preserve">
+    <value>left</value>
+  </data>
+	<data name="Name" xml:space="preserve">
+    <value>نام</value>
+  </data>
+	<data name="Genre" xml:space="preserve">
+  <value>ژانر</value>
+</data>
+	<data name="Rating" xml:space="preserve">
+  <value>امتیاز</value>
+</data>
+	<data name="CountryOfOrigin" xml:space="preserve">
+  <value>محصول کشور</value>
+</data>
+	<data name="NumberOfSeasons" xml:space="preserve">
+  <value>تعداد فصل‌ها</value>
+</data>
+	<data name="NumberOfEpisodes" xml:space="preserve">
+  <value>تعداد قسمت‌ها</value>
+</data>
+	<data name="PlotSummary" xml:space="preserve">
+  <value>خلاصه داستان</value>
+</data>
+	<data name="NoDescription" xml:space="preserve">
+  <value>ندارد</value>
+</data>
+	<data name="Download" xml:space="preserve">
+  <value>دانلود</value>
+</data>
+	<data name="Season" xml:space="preserve">
+  <value>فصل</value>
+</data>
+	<data name="Episode" xml:space="preserve">
+  <value>قسمت</value>
+</data>
+	<data name="RelatedItems" xml:space="preserve">
+  <value>مرتبط‌ها</value>
+</data>
+	<data name="DownloadQuality480" xml:space="preserve">
+  <value>دانلود با کیفیت 480p</value>
+</data>
+	<data name="DownloadQuality720" xml:space="preserve">
+  <value>دانلود با کیفیت 720p</value>
+</data>
+	<data name="DownloadQuality1080" xml:space="preserve">
+  <value>دانلود با کیفیت 1080p</value>
+</data>
+	<data name="CommentLoginError" xml:space="preserve">
+  <value>برای کامنت گذاشتن وارد حساب خود شوید.</value>
+</data>
+	<data name="CommentBorder" xml:space="preserve">
+  <value>right</value>
+</data>
+	<data name="FetchEpisodesError" xml:space="preserve">
+  <value>خطا در دریافت قسمت‌ها:</value>
+</data>
+	<data name="FetchDataError" xml:space="preserve">
+  <value>خطا در دریافت اطلاعات.</value>
+</data>
+
+</root>

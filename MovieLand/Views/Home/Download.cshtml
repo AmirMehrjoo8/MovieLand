@@ -1,0 +1,32 @@
+﻿@model MovieLand.Models.ViewModels.DownloadVM
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer
+@{
+    ViewData["Title"] = Localizer["Download"].Value +" "+ Model.PostName;
+}
+
+<div style="margin-top:90px; height:50vh;" class="container">
+    <h1>@Localizer["Download"] @Model.PostName</h1>
+    <h4>
+        @Localizer["Dear1"]
+        @Model.UserName
+        @Localizer["Dear2"]
+    </h4><br />
+    <div class="alert alert-danger text-center col-sm-12 col-md-10 col-lg-9 col-xl-8 col-xxl-7 m-auto">
+        @if (Model.Format == "tv")
+        {
+            <p>
+                @Localizer["TvMessage", Model.Episode, Model.Season, Model.PostName, Model.Quality]
+            </p>
+        }
+         @if(Model.Format == "movie")
+        {
+            <p>
+                @Localizer["MovieMessage", Model.PostName, Model.Quality]
+            </p>
+        } 
+    </div>
+</div>
+@section Scripts {
+    <script src="~/js/jquery-3.7.1.min.js"></script>
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+}

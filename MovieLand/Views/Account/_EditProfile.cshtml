@@ -1,0 +1,75 @@
+﻿@model MovieLand.Models.ViewModels.EditProfileVM
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer
+
+<div class="modal fade"
+     id="ProfileEditModal"
+     tabindex="-1"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">@Localizer["EditProfileTitle"]</h5>
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="text-danger text-center">
+                    @TempData["EditProfileError"]
+                </div>
+                <form asp-action="EditProfile" asp-controller="Account" method="post" enctype="multipart/form-data">
+                    <div class="profile-upload">
+                        <input type="file" id="profilePicInput" name="ProfilePicture" accept="image/*" hidden>
+                        <label for="profilePicInput">
+                            <img id="profilePicPreview" src="@MovieLand.Classes.UserProfile.ProfilePictureLocation(ViewBag.UserId.ToString())" alt="Profile Picture">
+                        </label>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">@Localizer["UsernameLabel"]</label>
+                        <span asp-validation-for="Username" class="text-danger"></span>
+                        <input class="form-control"
+                               placeholder="@Localizer["UsernamePlaceholder"]"
+                               asp-for="Username" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">@Localizer["NameLabel"]</label>
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                        <input class="form-control"
+                               placeholder="@Localizer["NamePlaceholder"]"
+                               asp-for="Name" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">@Localizer["EmailLabel"]</label>
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                        <input class="form-control"
+                               placeholder="@Localizer["EmailPlaceholder"]"
+                               asp-for="Email" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">@Localizer["PasswordLabel"]</label>
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                        <input class="form-control"
+                               placeholder="@Localizer["PasswordPlaceholder"]"
+                               asp-for="Password" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">@Localizer["RePasswordLabel"]</label>
+                        <span asp-validation-for="RePassword" class="text-danger"></span>
+                        <input class="form-control"
+                               placeholder="@Localizer["RePasswordPlaceholder"]"
+                               asp-for="RePassword" />
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">
+                        @Localizer["SubmitEditProfile"]
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,114 @@
+﻿@using MovieLand.Classes
+@using System.Globalization
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@model IEnumerable<MovieLand.Models.DiscountCode>
+
+@{
+    ViewData["Title"] = Localizer["Title"].Value;
+    var lan = CultureInfo.CurrentUICulture.Name == "fa-IR" ? "en-US" : "fa-IR";
+}
+
+@section Language {
+    <a class="language text-nowrap" href="/Home/SetLanguage?culture=@lan&returnUrl=/Admin/DiscountCodes">@lan</a>
+}
+
+@if (Model.Any())
+{
+    <div class="discount-container">
+        <a href="#" class="add-discount" data-bs-toggle="modal" data-bs-target="#addDiscountCode">@Localizer["AddDiscount"]</a>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">@Localizer["Code"]</th>
+                    <th scope="col">@Localizer["Percent"]</th>
+                    <th scope="col">@Localizer["ExpireDate"]</th>
+                    <th scope="col">@Localizer["UsedCount"]</th>
+                    <th scope="col">@Localizer["MaxUse"]</th>
+                    <th scope="col">@Localizer["Delete"]</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <th scope="row">@item.TheDiscountCode</th>
+                        <th scope="row">@item.DiscountPercent%</th>
+                        <td>@ConvertDate.SimpleDateByLanguage(item.ExpireDateTime)</td>
+                        <td>@item.TotalUsed</td>
+                        <td>@item.MaxUsers</td>
+                        <td>
+                            <a asp-action="DeleteDiscountCode" asp-controller="DiscountCodes" asp-area="Admin" asp-route-id="@item.TheDiscountCode" class="btn btn-danger">
+                                @Localizer["Delete"]
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <div class="d-flex justify-content-center" style="margin: 100px auto;">
+        <div class="card shadow-lg p-4 border-warning border-3 rounded-4" style="max-width: 800px; width: 100%; background: linear-gradient(135deg, #fffbe6, #fff);">
+            <div class="card-body text-center">
+                <h2 class="card-title mb-3 text-danger fw-bold">@Localizer["NoDiscountCodes"]</h2>
+                <p class="card-text fs-5 text-secondary">
+                    @Localizer["CreateDiscountDescription"]
+                </p>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#addDiscountCode" class="btn btn-warning btn-lg px-4 fw-bold">
+                    @Localizer["CreateDiscountButton"]
+                    <svg xmlns="http://www.w3.org/2000/svg" style="transform: rotate(270deg);" width="20" height="20" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+}
+
+<div class="modal fade" id="addDiscountCode" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">@Localizer["AddNewDiscountModalTitle"]</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="text-danger text-center">
+                    @TempData["DiscountCodeError"]
+                </div>
+                <form asp-action="CreateDiscountCode" asp-controller="DiscountCodes" asp-area="Admin">
+                    <div class="mb-3">
+                        <label class="form-label">@Localizer["FormCodeLabel"]</label>
+                        <input type="text" class="form-control" name="code">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">@Localizer["FormPercentLabel"]</label>
+                        <input type="number" min="1" max="100" class="form-control" name="percent">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">@Localizer["FormExpireLabel"]</label>
+                        <input type="date" class="form-control" name="expireDate">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">@Localizer["FormMaxUseLabel"]</label>
+                        <input type="number" class="form-control" name="maxUse">
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">@Localizer["Submit"]</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(function () {
+            if ('@TempData["DiscountCodeError"]' !== '') {
+                $("#addDiscountCode").modal("show");
+            }
+        });
+    </script>
+}

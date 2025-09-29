@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="Dashboard">
+		<value>خانه</value>
+	</data>
+	<data name="Users">
+		<value>کاربران</value>
+	</data>
+	<data name="Transactions">
+		<value>تراکنش‌ها</value>
+	</data>
+	<data name="DiscountCodes">
+		<value>کدهای تخفیف</value>
+	</data>
+	<data name="SubscriptionCards">
+		<value>کارت‌های اشتراک</value>
+	</data>
+	<data name="Revenue">
+		<value>درآمد</value>
+	</data>
+	<data name="MovieLand">
+		<value>مووی لند</value>
+	</data>
+	<data name="ContactMsg">
+		<value>پیام کاربران</value>
+	</data>
+
+</root>

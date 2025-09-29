@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="Category" xml:space="preserve">
+  <value>دسته‌بندی</value>
+</data>
+	<data name="Category_Adventure" xml:space="preserve">
+        <value>ماجراجویی</value>
+    </data>
+	<data name="Category_Comedy" xml:space="preserve">
+        <value>کمدی</value>
+    </data>
+	<data name="Category_Action" xml:space="preserve">
+        <value>اکشن</value>
+    </data>
+	<data name="Category_Animation" xml:space="preserve">
+        <value>انیمیشن</value>
+    </data>
+	<data name="Category_Crime" xml:space="preserve">
+        <value>جنایی</value>
+    </data>
+	<data name="Category_Mystery" xml:space="preserve">
+        <value>معمایی</value>
+    </data>
+	<data name="Category_Drama" xml:space="preserve">
+        <value>درام</value>
+    </data>
+	<data name="Category_Family" xml:space="preserve">
+        <value>خانوادگی</value>
+    </data>
+	<data name="Category_Documentary" xml:space="preserve">
+        <value>مستند</value>
+    </data>
+	<data name="Category_Western" xml:space="preserve">
+        <value>وسترن</value>
+    </data>
+	<data name="Movie" xml:space="preserve">
+  <value>فیلم</value>
+</data>
+	<data name="TV" xml:space="preserve">
+  <value>سریال</value>
+</data>
+	<data name="Loading" xml:space="preserve">
+  <value>...در حال بارگیری</value>
+</data>
+
+	<data name="GenreNotFound" xml:space="preserve">
+  <value>ژانر یافت نشد</value>
+</data>
+
+	<data name="NoContentFound" xml:space="preserve">
+  <value>هیچ محتوایی برای این ژانر یافت نشد.</value>
+</data>
+
+	<data name="FetchError" xml:space="preserve">
+  <value>خطا در دریافت داده</value>
+</data>
+
+	<data name="Movie" xml:space="preserve">
+  <value>فیلم</value>
+</data>
+
+	<data name="TVShow" xml:space="preserve">
+  <value>سریال</value>
+</data>
+
+	<data name="Fetching" xml:space="preserve">
+  <value>در حال دریافت</value>
+</data>
+
+	<data name="Error" xml:space="preserve">
+  <value>خطا</value>
+</data>
+
+</root>

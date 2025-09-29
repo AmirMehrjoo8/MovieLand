@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="Messages" xml:space="preserve">
+    <value>پیام‌ها</value>
+  </data>
+  <data name="dir" xml:space="preserve">
+    <value>rtl</value>
+  </data>
+  <data name="UserMessages" xml:space="preserve">
+    <value>پیام‌های کاربران :</value>
+  </data>
+  <data name="NoMessages" xml:space="preserve">
+    <value>هیچ پیامی وجود ندارد.</value>
+  </data>
+</root>

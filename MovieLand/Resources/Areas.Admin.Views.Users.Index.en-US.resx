@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="dir">
+		<value>ltr</value>
+	</data>
+	<data name="UsersTitle">
+		<value>User Management</value>
+	</data>
+	<data name="AdminCount">
+		<value>Admins count</value>
+	</data>
+	<data name="RegularUsers">
+		<value>Regular users</value>
+	</data>
+	<data name="VipUsers">
+		<value>VIP users</value>
+	</data>
+	<data name="SearchPlaceholder">
+		<value>Search...</value>
+	</data>
+	<data name="FoundUsersCount">
+		<value>{0} users found for '{1}'</value>
+	</data>
+</root>

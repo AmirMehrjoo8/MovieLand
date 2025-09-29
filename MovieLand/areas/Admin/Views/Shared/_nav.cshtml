@@ -1,0 +1,25 @@
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer
+
+<div id="sidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
+    <a href="/Admin/Dashbord">@Localizer["Dashboard"]</a>
+    <a href="/Admin/Users">@Localizer["Users"]</a>
+    <a href="/Admin/Transactions">@Localizer["Transactions"]</a>
+    <a href="/Admin/DiscountCodes">@Localizer["DiscountCodes"]</a>
+    <a href="/Admin/SubCards">@Localizer["SubscriptionCards"]</a>
+    <a href="/Admin/Income">@Localizer["Revenue"]</a>
+    <a href="/Admin/ContactMessages">@Localizer["ContactMsg"]</a>
+</div>
+
+<nav class="nav-admin top-0">
+    <div class="hamburger" onclick="openSidebar()">☰</div>
+    <span class="icon"><a href="/">MovieLand</a></span>
+    <ul>
+        <li><a href="/Admin/Dashbord">@Localizer["Dashboard"]</a></li>
+        <li><a href="/Admin/Users">@Localizer["Users"]</a></li>
+        <li><a href="/Admin/Transactions">@Localizer["Transactions"]</a></li>
+        <li><a href="/Admin/DiscountCodes">@Localizer["DiscountCodes"]</a></li>
+        <li><a href="/Admin/SubCards">@Localizer["SubscriptionCards"]</a></li>
+        <li><a href="/Admin/Income">@Localizer["Revenue"]</a></li>
+        <li><a href="/Admin/ContactMessages">@Localizer["ContactMsg"]</a></li>
+    </ul>

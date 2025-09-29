@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="dir" xml:space="preserve">
+    <value>rtl</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>تماس با ما</value>
+  </data>
+  <data name="ContactIntro" xml:space="preserve">
+    <value>اگر پیشنهاد، انتقاد یا سؤالی دارید، خوشحال می‌شویم با ما در ارتباط باشید. تیم پشتیبانی ما آماده پاسخگویی به شماست.</value>
+  </data>
+	<data name="Name" xml:space="preserve">
+    <value>نام</value>
+  </data>
+	<data name="Email" xml:space="preserve">
+    <value>ایمیل</value>
+  </data>
+	<data name="YourMessage" xml:space="preserve">
+    <value>پیام شما</value>
+  </data>
+	<data name="SendMessage" xml:space="preserve">
+    <value>ارسال پیام</value>
+  </data>
+	<data name="ContactViaSocials" xml:space="preserve">
+    <value>همچنین می‌توانید از طریق شبکه‌های اجتماعی با ما در تماس باشید:</value>
+  </data>
+	<data name="Instagram" xml:space="preserve">
+    <value>اینستاگرام</value>
+  </data>
+	<data name="Telegram" xml:space="preserve">
+    <value>تلگرام</value>
+  </data>
+</root>
